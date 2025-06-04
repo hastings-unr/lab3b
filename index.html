@@ -14,6 +14,7 @@
 	}
   </script -->
   <script>
+      function init() {//console.log("at init")
 	//document.writeln("<br>Hello, Now!");
 	const Pads = "1,ABC2,DEF3,GHI4,JKL5,MNO6,PQRS7,TUV8,WXYZ9,*,0,#"
 	function init() { console.log("at init"); //alert("at init")
@@ -28,9 +29,10 @@
 	}
 	document.writeln("</table>");
 	}
+      }
   </script>
   </head>
-  <body">
+  <body onLoad="init()">
 	<p>PBX Emulator </p>
  	<input type=text id=txt value="">
 	<input type=button id=btn value="Dial" onClick="toggleBtn()"> 
